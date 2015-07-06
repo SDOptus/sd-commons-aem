@@ -41,7 +41,7 @@ public class LoggingFilter implements Filter {
     @Override
     public void doFilter(final ServletRequest request, final ServletResponse response,
             final FilterChain filterChain) throws IOException, ServletException {
-
+        // this is commnt1
         final SlingHttpServletRequest slingRequest = (SlingHttpServletRequest) request;
         logger.debug("request for {}, with selector {}", slingRequest
                 .getRequestPathInfo().getResourcePath(), slingRequest
